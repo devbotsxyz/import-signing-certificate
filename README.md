@@ -14,7 +14,7 @@ For simple projects where there is one scheme, invoking `xcode-archive` can be a
   with:
     certificate-data: ${{ secrets.DEVELOPMENT_CERTIFICATE_DATA }}
     certificate-passphrase: ${{ secrets.DEVELOPMENT_CERTIFICATE_PASSPHRASE }}
-    keychain-password: ${{ secrets.KEYCHAIN_PASSWORD }
+    keychain-password: ${{ secrets.KEYCHAIN_PASSWORD }}
 ```
 
 The certificate data should be a Base64 encoded `.p12` file, which is the default certificate export format of _Keychain Access.app_. The `keychain-password` input should be a (hard to guess) random password to be used for the temporary keychain.
